@@ -21,26 +21,44 @@ Once the project moves into development, the press release can be used as a touc
 ## Heading ##
   > Name the product in a way the reader (i.e. your target customers) will understand.
 
+  Get Dressed!
+
 ## Sub-Heading ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+
+  You already have enough to think about, let Get Dressed! take the burden of deciding what to wear off your plate.
 
 ## Summary ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
 
+  Given your closet of clothes and inputs on the weather and your mood, Get Dressed! will provide you with the perfect outfit for the day. 
+
 ## Problem ##
   > Describe the problem your product solves.
+
+  Instead of standing in front of the closet in the morning wondering if what you're putting on will match and look good, Get Dressed! will provide you with exactly what to wear so you'll always be looking your best and will be dressed appropriately for the day.
 
 ## Solution ##
   > Describe how your product elegantly solves the problem.
 
+  Based on mood and weather input, Get Dressed! categorizes your clothes based on that day's user input.  If going to HR, appropriate clothes will be narrowed down.  If going on an interview, other clothes will be filtered for this look.
+
 ## Quote from You ##
   > A quote from a spokesperson in your company.
+
+  Valuable minutes can be wasted in front of the closet wondering what clothes should be put on.  Using just a couple inputs that take no effort to decide (weather and mood), Get Dressed! will shave off the time spent in front of your closet so you can get dressed confidently and hit the road to HR or interview.
 
 ## How to Get Started ##
   > Describe how easy it is to get started.
 
+  Start by categorizing your clothes in the database and determine if that clothing is best suited for what kind of weather and what kind of mood.
+
 ## Customer Quote ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
 
+  "I used to waste precious minutes wondering what I should wear.  Now Get Dressed! makes this daily burdensome decision for me.  Thanks Get Dressed!." -Person
+
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
+
+  Try Get Dressed! for free today and join the integer of people who are more efficient and productive with Get Dressed!  

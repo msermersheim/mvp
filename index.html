@@ -3,9 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Get Dressed!</title>
-    <!-- dependencies -->
+    <!-- dependencies css-->
     <!-- scripts -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+
     <script src="scripts/closetData.js"></script>
+    <script src="scripts/app.js"></script>
+    
   </head>
   <body>
     <h1>Get Dressed!</h1>
@@ -14,11 +20,34 @@
         <option value="Tired" id="Tired">Tired</option>
       </select><br>
       <button type="button" id="chooseTop">Choose Mood</button>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Mood</th>
+            <th>Weather</th>
+          </tr>
+          <tr>
+            <td><input class="name-input"></td>
+            <td><input class="type-input"></td>
+            <td><input class="mood-input"></td>
+            <td><input class="weather-input"></td>
+        </thead>
+        <tbody class="closet-list"></tbody>
     </div>
+
+    <script type="text/template" class="closet-list-template">
+      <td><span class="name"><%= name %></span></td>    
+      <td><span class="name"><%= type %></span></td>
+      <td><span class="name"><%= mood %></span></td>
+      <td><span class="name"><%= weather %></span></td>
+    </script>
+
     <script>
       $(function(){
-        var closet = new Clothes(closetData);
-        new AppView({el: $('#main'), collection: movies}).render();
+        var closet = new Closet(closetData);
+        new AppView({el: $('#main'), collection: closet}).render();
       });
     </script>
   </body>
