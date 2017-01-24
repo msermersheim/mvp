@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Get Dressed!</title>
+    <!-- dependencies -->
+    <!-- scripts -->
+    <script src="scripts/closetData.js"></script>
+  </head>
+  <body>
+    <h1>Get Dressed!</h1>
+    <div id="main">Select Mood<br>
+      <select id="moodSelect">
+        <option value="Tired" id="Tired">Tired</option>
+      </select><br>
+      <button type="button" id="chooseTop">Choose Mood</button>
+    </div>
+    <script>
+      $(function(){
+        var closet = new Clothes(closetData);
+        new AppView({el: $('#main'), collection: movies}).render();
+      });
+    </script>
+  </body>
+</html>  
