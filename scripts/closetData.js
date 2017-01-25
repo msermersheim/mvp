@@ -20,7 +20,7 @@ var closetData = [
   {
     name: 'Black Zip-Up',
     type: 'Top',
-    mood: 'Confident'
+    mood: 'Confident',
     weather: 'dry'
   },
   {

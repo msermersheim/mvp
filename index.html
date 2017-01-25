@@ -5,7 +5,7 @@
     <title>Get Dressed!</title>
     <!-- dependencies css-->
     <!-- scripts -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery/jquery.min.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/backbone/backbone.js"></script>
 
@@ -14,12 +14,19 @@
     
   </head>
   <body>
-    <h1>Get Dressed!</h1>
+    <h1>dress yourself, michael.</h1>
     <div id="main">Select Mood<br>
       <select id="moodSelect">
         <option value="Tired" id="Tired">Tired</option>
-      </select><br>
-      <button type="button" id="chooseTop">Choose Mood</button>
+        <option value="Sleepy" id="Sleepy">Sleepy</option>
+      </select>
+      <select id="weatherSelect">
+        <option value="Raining" id="Raining">Raining</option>
+        <option value="Dry" id="Dry">Dry</option>
+      </select>
+      <button type="button" id="chooseTop">Generate Outfit</button>
+      
+      <h2>Add Garment</h2>
       <table class="table">
         <thead>
           <tr>
@@ -27,27 +34,84 @@
             <th>Type</th>
             <th>Mood</th>
             <th>Weather</th>
+            <th>Action</th>
           </tr>
           <tr>
             <td><input class="name-input"></td>
             <td><input class="type-input"></td>
             <td><input class="mood-input"></td>
             <td><input class="weather-input"></td>
+            <td><button class="btn-add-clothing">Add</button></td>
         </thead>
         <tbody class="closet-list"></tbody>
+      </table>
     </div>
-
-    <script type="text/template" class="closet-list-template">
-      <td><span class="name"><%= name %></span></td>    
-      <td><span class="name"><%= type %></span></td>
-      <td><span class="name"><%= mood %></span></td>
-      <td><span class="name"><%= weather %></span></td>
-    </script>
-
+    <div>
+      <script type="text/template" class="closet-list-template">
+        <td><span class="name"><%= name %></span></td>    
+        <td><span class="name"><%= type %></span></td>
+        <td><span class="name"><%= mood %></span></td>
+        <td><span class="name"><%= weather %></span></td>
+        <td><button class="btn-edit-clothing">Edit</button>
+            <button class="btn-delete-clothing">Delete</button></td>
+      </script>
+    </div>
+    <h2>Closet</h2>
+    <div id="closet">
+    <table class="table" style="width:50%">
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Mood</th>
+          <th>Weather</th>
+        </tr>
+        <tr>
+          <td>Grey Hoodie</td>
+          <td>Top</td>
+          <td>Tired</td>
+          <td>Wet</td>
+        </tr>
+        <tr>
+          <td>Green Hoodie</td>
+          <td>Top</td>
+          <td>Sleepy</td>
+          <td>Wet</td>
+        </tr>
+        <tr>
+          <td>Blue Zip Up</td>
+          <td>Top</td>
+          <td>Tired</td>
+          <td>Dry</td>
+        </tr>
+        <tr>
+          <td>Black Zip Up</td>
+          <td>Top</td>
+          <td>Sleepy</td>
+          <td>Dry</td>
+        </tr>
+        <tr>
+          <td>Jeans</td>
+          <td>Bottom</td>
+          <td>All</td>
+          <td>All</td>
+        </tr>
+        <tr>
+          <td>Nikes</td>
+          <td>Shoes</td>
+          <td>All</td>
+          <td>Dry</td>
+        </tr>
+        <tr>
+          <td>Top Siders</td>
+          <td>Shoes</td>
+          <td>All</td>
+          <td>Wet</td>
+        </tr>
+    </div>
     <script>
       $(function(){
         var closet = new Closet(closetData);
-        new AppView({el: $('#main'), collection: closet}).render();
+        new AppView({el: $('#closet'), collection: closet}).render();
       });
     </script>
   </body>
